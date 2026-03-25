@@ -1,11 +1,11 @@
 {{#hasfpiconnav}}
-    <div class="fpstartwrap text-left">
+    <div class="fpstartwrap text-start">
     <div class="fpstart">
         <div class="iconset">
             {{#fpiconnav}}
                 {{#hasicon}}
                 <div class="d-inline-flex fs-4 ">
-                    <a class="iconbtn mr-3 ml-2" href = {{{link}}} title = "{{{linktext}}}" alt="{{{linktext}}}" target="{{linktarget}}">
+                    <a class="iconbtn me-3 ms-2" href = {{{link}}} title ="{{{linktext}}}" target="{{linktarget}}">
                         <i class="fa fa-1x fa-{{{linkicon}}}"></i> {{{linktext}}}
                     </a>
                 </div>
@@ -14,7 +14,7 @@
             {{#fpslideicon}}
                 {{#hasicon}}
                     <div class="d-inline-flex fs-4">
-                        <a role="iconbtn" class="iconbtn mr-3 ml-2" data-toggle="collapse" href="#fpslider" aria-expanded="false" aria-controls="fpslider" title = "{{{linktext}}}" alt="{{{linktext}}}">
+                        <a role="button" class="iconbtn me-3 ms-2" data-bs-toggle="collapse" href="#fpslider" aria-expanded="false" aria-controls="fpslider" title ="{{{linktext}}}">
                             <i class="fa fa-1x fa-{{{linkicon}}}"></i> {{{linktext}}}
                         </a>
                     </div>
@@ -23,7 +23,7 @@
             {{#fpcreateicon}}
                 {{#hasicon}}
                 <div class="d-inline-flex fs-4">
-                    <a class="iconbtn mr-3 ml-2" href = {{{link}}} title = "{{{linktext}}}" alt="{{{linktext}}}" target="{{linktarget}}">
+                    <a class="iconbtn me-3 ms-2" href = {{{link}}} title ="{{{linktext}}}" target="{{linktarget}}">
                         <i class="fa fa-1x fa-{{{linkicon}}}"></i> {{{linktext}}}
                     </a>
                 </div>
@@ -32,7 +32,7 @@
         </div>
     </div>
         {{#hasslidetextbox}}
-            <div id="fpslider" class="collapse text-left" style="padding:1rem;">
+            <div id="fpslider" class="collapse text-start" style="padding:1rem;">
                 {{{slidetextbox}}}
             </div>
         {{/hasslidetextbox}}

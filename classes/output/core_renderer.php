@@ -30,6 +30,8 @@ use html_writer;
 use moodle_url;
 //Begin DBN Update
 use custom_menu;
+use help_icon; // Added for help button feature
+use pix_icon;  // Added for help button feature
 use stdClass;
 use theme_config;
 //End DBN Update
@@ -379,7 +381,8 @@ class core_renderer extends \theme_boost_union\output\core_renderer {
         $createbuttonurl = (empty($this->page->theme->settings->createbuttonurl)) ? false : $this->page->theme->settings->createbuttonurl;
         $createbuttontext = (empty($this->page->theme->settings->createbuttontext)) ? false : format_string($this->page->theme->settings->createbuttontext);
         $hasslideicon = (empty($this->page->theme->settings->slideicon && isloggedin() && !isguestuser())) ? false : $this->page->theme->settings->slideicon;
-        $slideiconbuttonurl = 'data-toggle="collapse" data-target="#collapseExample';
+        //$slideiconbuttonurl = 'data-toggle="collapse" data-target="#collapseExample';
+        $slideiconbuttonurl = '';
         $slideiconbuttontext = (empty($this->page->theme->settings->slideiconbuttontext)) ? false : format_string($this->page->theme->settings->slideiconbuttontext);
         $hasnav1icon = (empty($this->page->theme->settings->nav1icon && isloggedin() && !isguestuser())) ? false : $this->page->theme->settings->nav1icon;
         $hasnav2icon = (empty($this->page->theme->settings->nav2icon && isloggedin() && !isguestuser())) ? false : $this->page->theme->settings->nav2icon;
