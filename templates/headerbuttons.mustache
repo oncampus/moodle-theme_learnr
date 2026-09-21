@@ -45,7 +45,7 @@
 <div class="headerbuttons">
     {{#showincourseonlymanagementbtn}}
         <div class="text-right blockpanelbtn">
-            <button id="blocksliderbutton" class="btn btn-secondary headerbutton blockpanelbutton" type="button" data-toggle="collapse" data-target="#blockslider" aria-expanded="false" aria-controls="blockslider">
+            <button id="blocksliderbutton" class="btn btn-secondary headerbutton blockpanelbutton" type="button" data-bs-toggle="collapse" data-bs-target="#blockslider" aria-expanded="false" aria-controls="blockslider">
         <i class="fa fa-arrows-v" aria-hidden="true"> </i> <span class="blockbtntext d-none d-sm-inline-block">{{# str }} courseblockpanelbtn, theme_learnr {{/ str }}</span>
             </button>
         </div>
@@ -58,7 +58,7 @@
 
     {{#hascourseactivities}}
     <div class="courseactivites">
-        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement= "right" title="{{{courseactivitiesbtntext}}}" class="btn btn-secondary headerbutton courseactivities" style="float:right;"><i class="fa-1x fa fa-list-alt courseactivities"></i></a>
+        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement= "right" title="{{{courseactivitiesbtntext}}}" class="btn btn-secondary headerbutton courseactivities" style="float:right;"><i class="fa-1x fa fa-list-alt courseactivities"></i></a>
         <div class="dropdown-menu dropdown-menu-right iconsidebar">
             <h5>{{{courseactivitiesbtntext}}}</h5>
             {{{courseactivitiesmenu}}}
@@ -68,7 +68,7 @@
 
     {{#hasmycourses}}
     <div class="mycourses">
-        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement= "right" title="{{{mycourses}}}" class="btn btn-secondary headerbutton mycourses" style="float:right;"><i class="fa-1x fa fa-history mycourses"></i></a>
+        <a href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement= "right" title="{{{mycourses}}}" class="btn btn-secondary headerbutton mycourses" style="float:right;"><i class="fa-1x fa fa-history mycourses"></i></a>
         <div class="dropdown-menu dropdown-menu-right iconsidebar">
             <h5>{{{mycourses}}}</h5>
             {{{mycoursesmenu}}}
